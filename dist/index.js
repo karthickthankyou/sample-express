@@ -4,12 +4,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const config_1 = require("./config");
 const app = (0, express_1.default)();
-const port = 3000;
 app.get('/', (_req, res) => {
-    res.send('Hello World!');
+    res.send('Hello World!!!');
 });
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+app.listen(config_1.port, () => {
+    console.log(`Example app listening at http://localhost:${config_1.port}`);
 });
 //# sourceMappingURL=index.js.map
