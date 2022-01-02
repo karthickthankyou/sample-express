@@ -4,7 +4,7 @@ import { port } from './config'
 const app = express()
 
 app.get('/', (_req, res) => {
-  res.send('Hello World!!!')
+  res.send('Hello Dev branch.')
 })
 
 app.listen(port, () => {
